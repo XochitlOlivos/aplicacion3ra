@@ -1,0 +1,427 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TERCERA APLICACION </title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp3.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<style type="text/css">
+</style>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="acciones" type="text/javascript"></script>
+<script type="text/javascript">
+
+ 
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/Popo-mapa-ubicacion-2.jpg','imagenes/actividad3.png','imagenes/medidas2.jpg','imagenes/monitoreo2.jpg')">
+
+
+
+<div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-add-back-btn="Regresar" data-back-btn-theme="b">
+    <h1> VOLCAN POPOCATEPETL </h1>
+   </div>
+  <!-- Start WOWSlider.com -->
+<iframe src="visor/indexvisor1.html" style="width:200%;height:50%;max-width:60%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+   <div>
+   <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>UBICACION </h2>
+   </a>
+   </li>
+    <li class="ui-first-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> TAMAÑO </h2>
+   </a>
+   </li>
+     <li class="ui-first-child ui-last-child">
+   <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> ANTIGUEDAD </h2>
+   </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2> HISTORIA O LEYENDA </h2>
+   </a>
+   </li>   
+   <li class="ui-first-child ui-last-child">
+     <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2> ACTIVIDAD VOLCANICA</h2>
+     </a> 
+      </li>   
+   <li class="ui-first-child ui-last-child">
+     <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>MONITOREO</h2>
+     </a> 
+      </li>   
+   <li class="ui-first-child ui-last-child">
+     <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2> MEDIDAS PREVENTIVAS</h2>
+     </a> 
+      </li> 
+       <li class="ui-first-child ui-last-child">
+     <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2> ZONAS DE RIESGO </h2>
+     </a> 
+      </li>    
+   </ul>
+  </div>
+  <div data-role="footer" align="center" data-theme="a">
+   <div>
+   <h4> APLICACION TRES</h4>
+   <img src="imagenes/volcan.png" width="89" height="59">
+   </div>
+    <div>
+    
+    <h4>Maria Xochitl Olivos Gonzalez </h4>
+    </div>
+    </div>
+  </div>     
+     <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>UBICACION</h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <p> El Popocatépetl esta ubicado en los estados de Morelos, Puebla (45 kilometros) y el Estado de México( a 55 kilometros). Al sur de la Sierra Volcánica Transversal que constituye la espina dorsal del Altiplano Mexicano.
+
+En el Estado de México colinda con los municipios: Tlamanalco, Amecameca, Atlauta y Ecatzingo.
+
+Con el estado de Morelos colinda específicamente con el municipio de Tetela del Volcán.
+
+Por la parte de Puebla colinda con Huejotzingo, San Salvador el Verde, Domingo Arenas, San Nicolás de los Ranchos y Tochimilco.
+</p>
+       <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','imagenes/Popo-mapa-ubicacion-2.jpg',1)"><img src="imagenes/volcanes_mexico.jpg" width="122" height="118" id="Image3"></a></p>
+       </div>
+       </div>
+       <div data-role="footer"data-theme="a" data-position="fixed" >
+       <h4> APLICACION TRES, MXOG </h4>
+       </div>
+       </div>
+       </div>
+       
+       <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1> TAMAÑO </h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <p> Es un volcán de forma cónica simétrica.
+Su altura sobre el nivel del mar es de 5,452 m.(17,887 pies).
+El cráter en la parte más ancha mide 612 m. y en la más angosta 400 m. Tiene una profundidad máxima de 505 m. y es el vértice donde limitan tres estados: México, Puebla y Morelos.</p>
+       <p><img src="imagenes/capacidad2.png" width="129" height="113"></p>
+       <p> Las dos principales cimas del Popo son el Pico Mayor y el Espinazo del Diablo, ambos alrededor del cráter.
+         Es el segundo volcán más alto de nuestro país; el primero lo ocupa el Pico de Orizaba o Citlaltépetl con 5,747 m. y el tercero el Iztaccíhuatl o Ixtaccíhualtl ( Con quien esta unido por la parte norte mediante un paso montañoso conocido como Paso de Cortés) con 5,286 m. de altura. </p>
+       <p><img src="imagenes/capacidad.png" width="173" height="154"></p>
+       </div>
+       </div>
+       <div data-role="footer"data-theme="a" data-position="fixed" >
+       <h4> APLICACION TRES, MXOG </h4>
+       </div>
+       </div>
+       </div>
+       
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1> ANTIGUEDAD </h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+     <p> Tiene 14 mil años. Y no es muy efusivo, pero sí, con carácter explosivo. Nació como el Nexpayantla, hace medio millón de años y, a través de diferentes ciclos eruptivos muy violentos, fue cambiando. Luego fue El Ventorrillo, hace aproximadamente 250 mil años, para transformarse en El Pico del Frayle hace 18 mil años. Sí, se trata del Popocatépetl o "don Gregorio", a quien se le toma el pulso segundo a segundo, después de su receso o descanso en su última actividad que fue entre los años 1919 y 1924, fase en la que sólo era un volcán humeante con sus fumarolas.Y como es un volcán que se formó a través de diferentes estratos, con sus respectivos ciclos de carga de magma hacia el interior de su cráter, esto es, domos y domos, y cuando la presión interna excede el propio peso ese domo es violentamente destruido, en un proceso como el que se ve actualmente, que se inició el pasado viernes 13 de abril.</p>
+     <p><br>
+       <img src="imagenes/antiguedad.jpg" width="153" height="133">     </p>
+     <p>&nbsp;</p>
+       <div>
+       </div>
+       <div data-role="footer"data-theme="a" data-position="fixed" >
+       <h4> APLICACION TRES, MXOG </h4>
+       </div>
+       </div>
+       </div>
+       
+        <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1> HISTORIA O LEYENDA </h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <p> hace tiempo, "cuando los aztecas dominaban el Valle de México, el cacique de Tlaxcala decidió pelear por la libertad de su pueblo y empezó una terrible guerra entre aztecas y tlaxcaltecas.
+</p>
+       <p><img src="imagenes/pyi.png" width="142" height="153"></p>
+       <p>La bella princesa Iztaccíhuatl, hija del cacique de Tlaxcala, estaba enamorada del joven Popocatépetl, uno de los principales guerreros de este pueblo. Ambos se profesaban un amor inmenso, por lo que antes de ir a la guerra, el joven pidió al padre de la princesa la mano de ella si regresaba victorioso. El cacique de Tlaxcala aceptó el trato, y prometió recibirlo con el festín del triunfo y el lecho de su amor. El valiente guerrero se preparó con hombres y armas, partiendo a la guerra después de escuchar la promesa de que la princesa lo esperaría para casarse con él a su regreso. Al poco tiempo, un rival de Popocatépetl inventó que éste había muerto en combate. Al enterarse, la princesa Iztaccíhuatl lloró amargamente la muerte de su amado y luego murió de tristeza.
+         Popocatépetl venció en todos los combates y regresó triunfante a su pueblo, pero al llegar, recibió la terrible noticia de que la hija del cacique había muerto. De nada le servían la riqueza y poderío ganados si no tenía su amor. Desconsolado, el hombre tomó el cadáver de su princesa y lo cargó hasta depositarlo en la cima de una montaña, que tomó la forma de una mujer dormida. El joven le dio un beso, tomó una antorcha humeante y se arrodilló en otra montaña frente a su amada, velando su sueño eterno. La nieve cubrió sus cuerpos y los dos se convirtieron, lenta e irremediablemente, en volcanes.
+         
+         Desde entonces permanecen juntos y silenciosos Iztaccíhuatl y Popocatépetl </p>
+       <p><img src="imagenes/pye.png" width="140" height="98"></p>
+       </div>
+       </div>
+       <div data-role="footer"data-theme="a" data-position="fixed" > 
+       <h4> APLICACION TRES, MXOG </h4>
+       </div>
+       </div>
+       </div>
+       
+          <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1> ACTIVIDAD VOLCANICA </h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <p> Ha tenido por lo menos cuatro erupciones explosivas que colapsaron el cono, dando como resultado enormes derrumbes prehistóricos de enormes proporciones.
+
+Hace 14,000 años ocurrió una gran erupción que produjo abundantes lluvias de ceniza y piedra pómez. Durante los siguientes12 milenios han sucedido por lo menos seis grandes erupciones explosivas. La última gran erupción ocurrió aproximadamente entre los años 800 y 1,000 de nuestra era.</p>
+       <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/actividad3.png',1)"><img src="imagenes/actividad2.jpg" width="136" height="98" id="Image6"></a></p>
+       
+       <p>•1363 Comienza a humear. <br> 
+         •1519 y 1528 arroja humo, cenizas y piedras incandescentes. <br> 
+         •1530 produce solo humo. <br> 
+         •1539 lanza grandes llamas, piedras y cenizas. <br>  
+         •1570 Para este año incrementó la actividad sísmica. <br> 
+         •1571 Arrojó gran cantidad de cenizas. <br> 
+         •1592 Arrojó vapores y cenizas. <br> 
+         •1663 Arroja gran cantidad de ceniza y con ella piedras pómez.  <br> 
+         •1665 Estuvo arrojando cenizas por varios días. <br> 
+         •1697 Hizo una erupción de fuego. <br> 
+         •1720 Registró una nueva erupción. <br> 
+         •1790, 1802 y 1804 Arrojaba una columna de humo. <br> 
+         •1919: La erupción registrada en este año fue considerada por algunos como consecuencia de una explosión de dinamita provocada para la extracción de azufre. Los orígenes de esta actividad la inició Hernán Cortés en 1519 cuando mandó a Diego de Ordaz a que subiera el Popo pero no logró alcanzar el cráter; en cambio al año siguiente otros soldados sacaron azufre para fabricar pólvora.<br>  
+         •En 1947 ocurrió una erupción de consideración, para iniciar así un periodo de actividad. <br> 
+         •A lo largo de 1992 y 1993 aumentaron las fumarolas y los microsismos. <br> 
+         •21 de diciembre de 1994 registró una explosión que produjo gas y cenizas que fueron transportados por los vientos dominantes, llegando llegaron más allá del Estado de Puebla. Cabe señalar que en este año los monasterios del siglo XVI construidos en las laderas del volcán, fueron declarados Patrimonio de la Humanidad por la UNESCO. <br> 
+         •1995 Registro una actividad fluctuante. <br> 
+         •Marzo de 1996: En esta año aumentó la actividad y se formó un domo en el cráter.<br>  
+         •30 de abril de 1996, El popo lanza una lluvia de piedras incandescentes, provocando la muerte de cinco expertos alpinistas que exploraban el volcán. Durante este año también se registraron varios microsismos. <br> 
+         •El 30 de junio de 1997 lanzó una fumarola de 8 kilómetros de altura y 50 kilómetros de diámetro. <br> 
+         •20 de junio del 2003. <br> 
+         •21 de septiembre del 2003. <br> 
+         •25 de diciembre de 2005: Se produjo una nueva explosión que provocó una columna de humo y cenizas de tres kilómetros de altura y la expulsión de lava. <br> 
+         
+         Como el volcán esta activo, es constantemente vigilado y existen planes de emergencia por si hay necesidad de evacuar a los 23 pueblos que viven en sus faldas. Los encargados son el Centro Nacional de Prevención de Desastres CENAPRED, que opera en la Ciudad Universitaria, en la capital del país.
+       </p>
+       <p><img src="imagenes/actividad.jpg" width="153" height="120"></p>
+
+       </div>
+       </div>
+       <div data-role="footer"data-theme="a" data-position="fixed" >
+       <h4> APLICACION TRES, MXOG </h4>
+       </div>
+       </div>
+       </div>
+       
+        <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>MONITOREO </h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+     <p> 
+Cuatro tipos de monitoreo se han establecido en el volcán: visual, sísmico, geodésico y geoquímico, de los cuales el más importante es el sísmico. La red de monitoreo del Popocatépetl está compuesta por 15 estaciones localizadas en las laderas circundantes del volcán en sitios con altitudes de hasta 4300 m y a 1.5 km del cráter. La instrumentación consta de 8 sismógrafos triaxiales de periodo corto, 4 de banda ancha, 4 inclinómetros biaxiales para medir deformación, una cámara de video con enlace de microondas, un radar doppler meteorológico y diversos equipos para mediciones geodésicas, análisis químicos y determinación de las concentraciones de gases SO2 y CO2. Más de 50 señales de telemetría son trasmitidas en forma continua hacia un puesto central de registro y procesamiento localizado en el CENAPRED. Allí y mediante una extensa red de computadoras, la actividad es monitoreada y procesada las 24 horas del día. Al detectarse cualquier incremento anormal de la actividad sísmica del volcán, se activa un sistema de alarma acústica y a través de un sistema de marcado automático se envian mensajes a teléfonos particulares celulares y localizadores del personal de guardia . Del análisis de la información, las recomendaciones relativas al nivel de alertamiento son tomadas por el Comité Técnico Científico Asesor, integrado por eminentes investigadores de la UNAM y del CENAPRED. Mediante reportes especiales, autoridades del gobierno y de Protección Civil son informadas periódicamente acerca del nivel de actividad del volcán. Para el público en general se dispone de un buzón telefónico con mensajes sobre su estado de actividad.   
+
+Con la participación de diversas instituciones y un enorme esfuerzo realizado por parte del personal encargado, se ha logrado en un plazo corto, poner en operación una extensa infraestructura de registro y monitoreo que permite ya la vigilancia estrecha del volcán así como la detección oportuna de cualquier cambio en su estado de actividad.  
+</p>
+     <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/monitoreo2.jpg',1)"><img src="imagenes/monitoreo.png" width="193" height="134" id="Image14"></a> </p>
+       </div>
+       </div>
+       <div data-role="footer"data-theme="a" data-position="fixed" >
+       <h4> APLICACION TRES, MXOG </h4>
+       </div>
+       </div>
+       </div>
+       
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>MEDIDAS PREVENTIVAS </h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1> MEDIDAS GENERALES DE PREVENCION EN CASO DE ALERTA VOLCANICA</h1>
+   <div>
+   <p> 1. -Fumarolas: reportar la presencia de fumarolas a las autoridades de proteccion civil. Alejarse de la zona de acuerdo a las recomendaciones de las autoridades.<br>
+ 2. -Lluvia de piroclastos: usar tapabocas para evitar inhalar las cenizas. Tapar los depositos de agua para impedir que se contamine con las cenizas. Si vives cerca de un volcán activo, lo ideal seria que el techo de tu casa fuera de dos aguas, porque asi sé evitaria la acumulacion de las cenizas que pudiese derrumbar el techo. Sí el techo de tu casa no es de dos aguas, o no esta bien robustecido, barre las cenizas y vigílalo constantemente. Evacuar cuando las autoridades lo indiquen.<br>
+ 3. -Flujos piroclasticos: alejarse de las barrancas y cañadas. Evacuar cuando las autoridades lo consideren conveniente, las veces que sea necesario.<br>
+ 4. -Flujo de lava: evacuacion de los lugares indicados como zonas de posible paso de lava.<br>
+ 5. -Flujos de lodo: desalojar rapida y organizadamente las poblaciones hacia zonas altas, y abandonar los valles.<br>
+ 6. -Derrumbes: evacuar las zonas más expuestas, de acuerdo con las instrucciones de las autoridades.
+</p>
+
+   <br>
+   </div>
+      <div>   
+      <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','imagenes/medidas2.jpg',1)"><img src="imagenes/medidas.jpg" width="225" height="166" id="Image7"></a></p>
+   </div>
+   </div>
+   </div>
+   <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+     <h1>RECOMENDACIONES EN CASO DE CAIDA DE CENIZA VOLCANICA</h1>
+   <div>
+      <p>1.-No humedecer la ceniza a fin de evitar taponamientos en el sistema de alcantarillado. <br>
+2.- Mantén la calma.<br>
+ 3.-Utiliza medios electrónicos y de comunicación para obtener información confiable que den las autoridades de Protección Civil sobre la caída de ceniza y atiende siempre sus instrucciones.<br>
+ 4.-No realices actividades al aire libre y si es posible no salgas.<br>
+ 5.-Cierra puertas y ventanas y coloca toallas o trapos húmedos en las rendijas.<br>
+ 6.-Si tienes que salir cúbrete con un pañuelo o tapabocas, limpia ojos y garganta con agua pura.<br>
+ 7.-Para los ojos, usa lentes protectores, especialmente si usas lentes de contacto.<br>
+ 8.-Ten a la mano una linterna y pilas.<br>
+ 9.-La ceniza volcánica puede ser resbaladiza, sobre todo cuando está mojada. Toma las precauciones necesarias.<br>
+
+     </p>
+
+   <br>
+   </div>
+   <div>
+   <img src="imagenes/prevenciones.png" width="200" height="117"> 
+   </div>
+   </div>
+   </div>
+ 
+   <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1> QUE HACER ANTES, DURANTE Y DESPUES DE UNA ERUPCION VOLCANICA</h1>
+   <div>
+   </div>
+   <div>
+        <h4>Antes de una erupción </h4>
+        <p>
+•Conoce el mapa de los peligros volcánicos que te pueden afectar. Allí se delimitan las zonas de alto, mediano y bajo riesgo.<br>
+•Conoce las rutas de evacuación y ten prevista la posibilidad de alojarte temporalmente en casa de un familiar o amigo que no viva en la zona de riesgo.<br>
+•Haz conocer a tu familia este sitio de encuentro. Si se presenta la posibilidad de que ocurra una erupción y puedes verte afectado, probablemente la única medida de prevención correcta sea evacuar.<br>
+•Entérate de las medidas del plan de contingencia de tu localidad.<br>
+•Ten a la mano tus documentos de valor (identificaciones, títulos de propiedad, cartillas, etc.)</p>
+        <p><img src="imagenes/prevenciones3.jpg" width="257" height="156"><br>
+        </p>
+<h4> Durante una erupción </h4>
+<p>
+•Ante todo conserva la calma; el pánico puede producir más víctimas que el fenómeno natural.<br>
+•Reúne rápidamente a tu familia, especialmente a los niños y ancianos, quienes son las personas más vulnerables en estos momentos.<br>
+•Lo más importante es tu vida, toma únicamente tus objetos personales.<br>
+•Cierra las llaves de agua y gas, desconecta la luz y asegúrate de cerrar bien puertas y ventanas.<br>
+•Cumple con los planes de emergencia acordados.</p>
+<p><img src="imagenes/prevenciones4.jpg" width="226" height="161"></p>
+<h4> Después de una erupción </h4>
+<p>
+•Permanece en el sitio seguro hasta las autoridades te informen que ha vuelto la normalidad. ¡No trates de regresar antes a tu hogar!.<br>
+•Mantén en sintonía tu radio para recibir instrucciones.<br>
+•Antes de entrar a tu casa revisa que no ha quedado debilitada por la erupción.<br>
+•Evita hacer uso de líneas telefónicas, caminos, transportes, servicios médicos y hospitalarios si no es estrictamente necesario. Muchas personas pueden necesitarlos con real urgencia.<br>
+•Elimina la acumulación del material volcánico caído sobre los techos ya que por el peso éstos pueden derrumbarse.</p>
+
+
+
+   <br>
+   
+   <img src="imagenes/prevenciones2.png" width="185" height="128"> 
+   </div>
+   </div>
+   </div>
+   </div>
+      </div>
+       <div>
+       <div data-role="footer"data-theme="a" data-position="fixed" >
+       <h4>Aplicacion Tres, MXOG</h4>
+       </div>
+       </div>
+       </div>
+       
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>ZONAS DE RIESGO  </h1>
+      </div>
+       <div data-role="content" align="center">
+       <div>
+       <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1> PELIGROS VOLCÁNICOS </h1>
+   <div>
+   <p>En caso de una erupción del Popocatépetl, los tres posibles tipos de peligro serian: Flujos calientes de material volcánico: viajan a alta velocidad, sólo en algunos minutos descienden del volcán y destruyen todo a su paso. Flujos de lodo e inundaciones: se concentran esencialmente en las barrancas y en los arroyos y les toma de 10 a 30 minutos descender del volcán. Caída o lluvia de material volcánico: es peligrosa especialmente si el peso del deposito excede la resistencia de los techos de las casas, ya que ello puede ocasionar que se colapsen. En algunos casos, la acumulación de más de 10 centímetros de material puede producir el derrumbe del techo, sobre todo si el material se encuentra húmedo. 
+</p>
+   <p><img src="imagenes/zonas2.jpg" width="147" height="108"></p>
+
+   <br>
+   </div>
+      <div>   
+     
+   </div>
+   </div>
+   </div>
+   <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+     <h1>AREAS DE PELIGRO POR FLUJOS DE MATERIALES VOLCÁNICOS   </h1>
+   <div>
+      <p> 
+Area 1 (Peligro Mayor) podría se afectada por derrames de lava, flujos piroclásticos, flujos de lodo e inundaciones producidas por erupciones similares a las que han ocurrido al menos 2 veces en los últimos 1,000 años. <br>
+
+Area 2 ( Peligro Moderado ) podría ser afectada por los mismos peligros en listados para el área 1, producidos por erupciones grandes similares a las que han ocurrido al menos 10 veces en los últimos 15,000 años. <br>
+
+Area 3 ( Peligro Menor ) podría ser afectada por los mismos peligros enlistados para las áreas 1 y 2, pero producidos por erupciones muy grandes similares a las que han ocurrido al menos en los últimos 40,000 años.</p>
+      <p><img src="imagenes/zonas 3.jpg" width="160" height="148"><br> 
+      </p>
+
+   <br>
+   </div>
+   <div>
+  
+   </div>
+   </div>
+   </div>
+ 
+   <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+   <h1> AREAS DE PELIGRO POR DERRUMBES GIGANTES Y FLUJOS DE LODO </h1>
+   <div>
+   </div>
+   <div>
+        <p>
+
+Existe la remota posibildad de que una parte del Popocatépetl se desplome causando un gran derrumbe. Este se desplazaría a gran velocidad ( alrededor de 100 km/hr ) hasta una distancia máxima de aproximadamente 80 kilómetros destruyendo todo a su paso. Durante los últimos 40,000 años se produjeron 2 grandes derrumbes hacia el sur del volcán cubriendo áreas extensas. Si ocurriera otro evento de este tipo probablemente se dirigiría también hacia el sur. Generalmente grandes deformaciones susceptibles de ser observadas preceden a estos colapsos. Una erupción grande o un derrumbe gigante estaría acompañado de flujos de lodo e inundaciones de gran alcance. Estos viajaran distancias del orden de decenas de kilómetros por las barrancas que descienden del Popocatépetl.  
+</p>
+        <p><img src="imagenes/zonas.jpg" width="175" height="124"></p>
+
+   </div>
+   </div>
+   </div>
+   </div>
+      </div>
+       <div>
+       <div data-role="footer"data-theme="a" data-position="fixed" >
+       <h4>Aplicacion Tres, MXOG</h4>
+       </div>
+       </div>
+       </div>
+       
+       
+</body>
+</html>
